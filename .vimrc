@@ -10,6 +10,9 @@ set tabstop=2 " 문서에 있는 탭 문자를 2 칸으로 표시
 set softtabstop=2 " 탭 문자를 입력하면 2 칸으로 표시
 set shiftwidth=2 " << >> 로 이동할 때 2 칸씩 이동
 set expandtab " 탭 문자 입력하면 스페이스바 입력
+set autoindent " 자동 들여쓰기 활성화
+set smartindent " cindent 와 비슷하지만 # 으로 시작하는 전처리기 명령어에 대해서는 다음 라인 첫번째 열로 이동
+set cindent " c, c++, java 스타일의 자동 들여쓰기 활성화
 autocmd FileType make setlocal noexpandtab " Makefile 의 경우 탭 문자 그대로 입력
 
 """ vim 기본 설정 끝 """
